@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h8d-Xe-Cmh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="AlarmViewController" customModule="KyunKyun_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="eFi-tw-Dnk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eFi-tw-Dnk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1Tk-HV-pa0"/>
+                            <constraint firstItem="eFi-tw-Dnk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Z6-0a-UsQ"/>
+                            <constraint firstAttribute="trailing" secondItem="eFi-tw-Dnk" secondAttribute="trailing" id="Fpp-bp-KQd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eFi-tw-Dnk" secondAttribute="bottom" id="mFz-vy-pt8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="738-MP-kNT"/>
+                    <navigationItem key="navigationItem" id="KZb-j5-uph"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Led-2u-wkp" kind="show" id="0iN-4e-mE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549.5" y="299.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vt4-fz-1ju">
+            <objects>
+                <viewController id="uoY-3U-F37" customClass="VoiceViewController" customModule="KyunKyun_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dUp-qB-N83"/>
+                        <viewControllerLayoutGuide type="bottom" id="MFm-Uu-pZO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7IC-Cv-XXj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-Py-GoZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="19a-GX-Tob"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdC-7b-3Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549.5" y="1055.5"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="68l-5e-ofL">
+            <objects>
+                <viewController id="RsS-ih-fsw" customClass="SettingViewController" customModule="KyunKyun_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cRI-CJ-3JY"/>
+                        <viewControllerLayoutGuide type="bottom" id="UYg-Gg-iAI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="46J-aq-q5r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-Eo-hXe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYg-Gg-iAI" firstAttribute="top" secondItem="XF3-Eo-hXe" secondAttribute="bottom" id="0Os-cV-BhI"/>
+                            <constraint firstItem="XF3-Eo-hXe" firstAttribute="leading" secondItem="46J-aq-q5r" secondAttribute="leading" id="4cD-rk-6DD"/>
+                            <constraint firstAttribute="trailing" secondItem="XF3-Eo-hXe" secondAttribute="trailing" id="Emu-S1-5qD"/>
+                            <constraint firstItem="XF3-Eo-hXe" firstAttribute="top" secondItem="cRI-CJ-3JY" secondAttribute="bottom" id="VTU-S2-Csw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="U9h-7S-5wj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8kX-3d-8EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3549.5" y="1892.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GTf-4i-tvA">
+            <objects>
+                <viewController id="Led-2u-wkp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20e-xz-8O4"/>
+                        <viewControllerLayoutGuide type="bottom" id="UWO-27-XXr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rSV-FF-99L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoh-gZ-ch4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4097.5" y="299.5"/>
+        </scene>
+        <!--Time View Controller-->
+        <scene sceneID="PFP-RG-B9f">
+            <objects>
+                <viewController id="MdY-XE-jOg" customClass="TimeViewController" customModule="KyunKyun_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjN-fd-KMY"/>
+                        <viewControllerLayoutGuide type="bottom" id="cFY-ze-jQg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HkW-31-Xog">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="piL-sb-P9Z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_time.png" translatesAutoresizingMaskIntoConstraints="NO" id="NzP-g2-CMl">
+                                <rect key="frame" x="37" y="184" width="300" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="OgE-O1-QQf"/>
+                                    <constraint firstAttribute="height" constant="300" id="Rwy-bI-5Ii"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="06:35 pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuR-fu-WYd">
+                                <rect key="frame" x="0.0" y="295" width="375" height="71"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="70"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p02-Uh-Zf0">
+                                <rect key="frame" x="127" y="531" width="120" height="110"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="21"/>
+                                <state key="normal" title="START" backgroundImage="heart_m.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZiC-Ab-jW6" kind="show" id="Kxv-qQ-rg8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="piL-sb-P9Z" firstAttribute="leading" secondItem="HkW-31-Xog" secondAttribute="leading" id="9ZD-TP-qYh"/>
+                            <constraint firstItem="cFY-ze-jQg" firstAttribute="top" secondItem="piL-sb-P9Z" secondAttribute="bottom" id="WyV-EE-caE"/>
+                            <constraint firstItem="piL-sb-P9Z" firstAttribute="top" secondItem="vjN-fd-KMY" secondAttribute="bottom" id="Xtg-Zt-MKg"/>
+                            <constraint firstItem="NzP-g2-CMl" firstAttribute="centerX" secondItem="HkW-31-Xog" secondAttribute="centerX" id="eeb-U2-6SC"/>
+                            <constraint firstAttribute="trailing" secondItem="piL-sb-P9Z" secondAttribute="trailing" id="hYL-IK-D8u"/>
+                            <constraint firstItem="NzP-g2-CMl" firstAttribute="centerY" secondItem="HkW-31-Xog" secondAttribute="centerY" id="rkh-67-gs9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QvW-Pt-OIV"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="timeSetting" destination="QuR-fu-WYd" id="wjB-EU-yrO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BD7-N5-NeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417.5" y="763.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3aK-oT-Aa9">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZiC-Ab-jW6" customClass="TabBarController" customModule="KyunKyun_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iQU-xL-MQ2"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Sxv-YW-8Hr">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1fC-ZQ-4PX"/>
+                        <segue destination="uoY-3U-F37" kind="relationship" relationship="viewControllers" id="7oG-Qz-HjK"/>
+                        <segue destination="RsS-ih-fsw" kind="relationship" relationship="viewControllers" id="TKd-9h-arE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2u-De-etz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2928.5" y="763.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BkD-I8-hmf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h8d-Xe-Cmh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aC1-hs-n5D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MdY-XE-jOg" kind="relationship" relationship="rootViewController" id="4Vd-l3-zKe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AM-C5-wUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852.5" y="763.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="602" height="888"/>
+        <image name="bg_time.png" width="450" height="450"/>
+        <image name="heart_m.png" width="47" height="40"/>
+    </resources>
+</document>
