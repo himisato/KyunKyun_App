@@ -12,9 +12,9 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       let pink = UIColor(red: 254.0 / 255, green: 117.0 / 255, blue: 167.0 / 255, alpha: 1.0)
         
+        let pink = UIColor(red: 254.0 / 255, green: 117.0 / 255, blue: 167.0 / 255, alpha: 1.0)
+        let brown = UIColor(red: 102.0 / 255, green: 51.0 / 255, blue: 0, alpha: 1.0)
 
         let clock = makeOriginalImage("clock_mini")
         let highlightedclock = makeOriginalImage("clock_mini")
@@ -26,6 +26,7 @@ class TabBarController: UITabBarController {
         UITabBar.appearance().barTintColor = pink
         UITabBar.appearance().translucent = false
         self.navigationController!.navigationBar.barTintColor = pink
+        UITabBar.appearance().tintColor = brown
         
         let firstViewController = self.viewControllers![0]
         let secondViewController = self.viewControllers![1]
