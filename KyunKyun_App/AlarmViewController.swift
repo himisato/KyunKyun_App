@@ -7,11 +7,26 @@
 //
 
 import UIKit
+import AVFoundation
 
 class AlarmViewController: UIViewController {
 
+    var player: AVAudioPlayer!
+    
+    @IBAction func ButtonTapped(sender: AnyObject) {
+        if player.playing {
+            player.stop()
+        } else {
+            player.currentTime = 0
+            player.play()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let URL = NSBundle.mainBundle().URLForResource("a-2-2 toshishita", withExtension: "mp4")
+        player = try! AVAudioPlayer(contentsOfURL: URL!)
 
         // Do any additional setup after loading the view.
     }
