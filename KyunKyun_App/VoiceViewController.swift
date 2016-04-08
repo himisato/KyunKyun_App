@@ -9,6 +9,9 @@
 import UIKit
 
 class VoiceViewController: UIViewController {
+    
+    let voiceType = ["年下の彼", "執事系", "憧れの先輩", "理想の旦那様", "修造系", "関西イケメン"]
+    var myTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
