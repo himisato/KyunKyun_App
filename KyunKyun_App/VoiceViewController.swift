@@ -8,15 +8,16 @@
 
 import UIKit
 
-class VoiceViewController: UIViewController {
+class VoiceViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let voiceType = ["年下の彼", "執事系", "憧れの先輩", "理想の旦那様", "修造系", "関西イケメン"]
-    var myTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +25,21 @@ class VoiceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return voiceType.count
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Cell")
+        
+        cell.textLabel?.text = voiceType[indexPath.row]
+        return cell
+    }
+    
+    func tabelView(tabel: UITableView, didSelectRowAtInexpPath indexPath: NSIndexPath){
+        print(voiceType[indexPath.row])
+    }
+
+  
 
 }
